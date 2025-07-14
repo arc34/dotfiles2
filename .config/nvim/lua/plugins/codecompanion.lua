@@ -1,7 +1,10 @@
 return {
   -- https://github.com/olimorris/codecompanion.nvim
   "olimorris/codecompanion.nvim",
-  opts = {},
+  opts = {
+    -- configurations go here
+    -- enabled = false,
+  },
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-treesitter/nvim-treesitter",

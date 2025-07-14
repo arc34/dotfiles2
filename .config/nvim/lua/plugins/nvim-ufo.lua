@@ -47,6 +47,7 @@ return {
     -- https://github.com/kevinhwang91/promise-async
     "kevinhwang91/promise-async"
   },
+  ft = { "xml" },
   config = function ()
     require('ufo').setup({
       fold_virt_text_handler = handler,

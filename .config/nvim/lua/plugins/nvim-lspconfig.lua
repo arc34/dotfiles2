@@ -26,7 +26,7 @@ return {
       ensure_installed = {
         'lua_ls',
         'clangd',
-        'pyright',
+        'pyright', -- requires node to used
         'bashls', -- requires npm to be installed
         'yamlls', -- requires npm to be installed
         'lemminx',

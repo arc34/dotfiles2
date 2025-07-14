@@ -37,7 +37,8 @@ return {
         end,
       },
       completion = {
-        completeopt = 'menu,menuone,noinsert',
+        completeopt = 'menu,menuone,noinsert,noselect,preview',
+        -- completeopt = 'menu,menuone,noselect,preview',
       },
       mapping = cmp.mapping.preset.insert {
         ['<C-j>'] = cmp.mapping.select_next_item(), -- next suggestion
@@ -47,7 +48,7 @@ return {
         ['<C-Space>'] = cmp.mapping.complete {}, -- show completion suggestions
         ['<CR>'] = cmp.mapping.confirm {
           behavior = cmp.ConfirmBehavior.Replace,
-          select = true,
+          select = false,
         },
 	-- Tab through suggestions or when a snippet is active, tab to the next argument
         ['<Tab>'] = cmp.mapping(function(fallback)
@@ -70,8 +71,9 @@ return {
           end
         end, { 'i', 's' }),
       },
+      preselect = cmp.PreselectMode.None,
       sources = cmp.config.sources({
-        { name = "nvim_lsp" }, -- lsp 
+        { name = "nvim_lsp" }, -- lsp
         { name = "luasnip" }, -- snippets
         { name = "buffer" }, -- text within current buffer
         { name = "path" }, -- file system paths
