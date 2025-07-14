@@ -66,7 +66,7 @@ opt.mouse = ""
 
 -- Folding
 opt.foldcolumn = '0'
-opt.foldlevel = 20
+opt.foldlevel = 99
 opt.foldlevelstart = 99
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()" -- Utilize Treesitter folds
