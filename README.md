@@ -47,28 +47,28 @@
 
 ## Installation
 
-1. If you have previous neovim configuration. You may want to backup it first.
-  ```bash
-  mv ~/.config/nvim ~/.config/nvim.backup
-  mv ~/.local/share/nvim ~/.local/share/nvim.backup
-  mv ~/.local/state/nvim ~/.local/state/nvim.backup
-  mv ~/.cache/nvim ~/.cache/nvim.backup
-  ```
-2. Clone this repository to your $HOME folder
-  ```bash
-  $ git clone https://github.com/arc34/dotfiles2.git ~/.dotfiles
-  ```
-3. !!IMPORTANT!! Replace `~/.dotfiles/.gitconfig` with your own `.gitconfig`.
-  ```bash
-  $ cp .gitconfig ~/.dotfiles/.gitconfig
-  ```
-  Otherwise your `.gitconfig` will be overwritten by my `.gitconfig`.
-4. In $HOME folder, execute the following
-  ```bash
-  $ dgit reset --hard
-  ```
-5. Open nvim once.
-  ```bash
-  $ nvim
-  ```
-  The `Lazy Package Manager` should install everything on initial run.
+  1. If you have previous neovim configuration. You may want to backup it first.
+      ```bash
+      mv ~/.config/nvim ~/.config/nvim.backup
+      mv ~/.local/share/nvim ~/.local/share/nvim.backup
+      mv ~/.local/state/nvim ~/.local/state/nvim.backup
+      mv ~/.cache/nvim ~/.cache/nvim.backup
+      ```
+  2. Clone this repository to your $HOME folder
+      ```bash
+      $ git clone https://github.com/arc34/dotfiles2.git ~/.dotfiles
+      ```
+  3. !!IMPORTANT!! Replace `~/.dotfiles/.gitconfig` with your own `.gitconfig`.
+      ```bash
+      $ cp .gitconfig ~/.dotfiles/.gitconfig
+      ```
+     Otherwise your `.gitconfig` will be overwritten by my `.gitconfig`.
+  4. In $HOME folder, execute the following
+      ```bash
+      $ dgit reset --hard
+      ```
+  5. Open nvim once.
+      ```bash
+      $ nvim
+      ```
+     The `Lazy Package Manager` should install everything on initial run.
