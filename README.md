@@ -60,7 +60,7 @@
   ```
 3. !!IMPORTANT!! Replace `~/.dotfiles/.gitconfig` with your own `.gitconfig`.
   ```bash
-  $ cp .gitconfig ~/.gitconfig/.gitconfig
+  $ cp .gitconfig ~/.dotfiles/.gitconfig
   ```
   Otherwise your `.gitconfig` will be overwritten by my `.gitconfig`.
 4. In $HOME folder, execute the following
