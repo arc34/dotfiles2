@@ -14,7 +14,10 @@ keymap.set("n", "<leader>tn", ":tabn<CR>") -- next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") -- previous tab
 
 -- Vim-maximizer
-vim.keymap.set('n', '<C-w>o', ':MaximizerToggle<CR>', { noremap = true }) -- toggle maximize tab
+-- vim.keymap.set('n', '<C-w>o', ':MaximizerToggle<CR>', { noremap = true }) -- toggle maximize tab
+
+-- maximimize-nvim
+vim.keymap.set('n', '<C-w>o', ':Maximize<CR>', { noremap = true })
 
 -- Nvim-tree
 keymap.set("n", "<C-n>", ":NvimTreeToggle<CR>") -- toggle file explorer
